@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="gbk">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="腾讯游戏平台（TGP)，腾讯游戏全覆盖平台，打造永久免费网络加速，LOL官方助手、CF官方助手、DNF官方助手、游戏特权礼包、游戏管理、自动更新、一键启动、极速安全畅快的游戏平台">
+    <meta name="Keywords" content="腾讯游戏平台  游戏助手  腾讯游戏特权礼包  腾讯游戏福利 TGP TGP平台  TGP特权  游戏加速 LOL助手 LOL官方盒子 CF助手  DNF助手  免费网络加速">
+    <title>WeGame基础平台-首页</title>
+    <!-- 设计：cp  |  重构：cp  |  创建：2017-03-02 -->
+    <style type="text/css">
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+    table{border-collapse:collapse;border-spacing:0}
+    fieldset,img{border:0}
+    img{ display: block;}
+    address,caption,cite,code,dfn,em,strong,b,i,th,var{font-style:normal;font-weight:normal}
+    ol,ul{list-style:none}
+    caption,th{text-align:left}
+    h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+    h1{width: 100%; height: 0; font-size: 0; text-indent: -9999em; line-height: 500%; overflow: hidden;}
+    q:before,q:after{content:''}
+    a{ text-decoration: none;}
+    abbr,acronym{border:0;font-variant:normal}
+    sup{vertical-align:text-top}
+    sub{vertical-align:text-bottom}
+    input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+    input,textarea,select{*font-size:100%}
+    body{ font:12px/1.5 '\5FAE\8F6F\96C5\9ED1',tahoma,'\5b8b\4f53',sans-serif; padding-top: 42px; background-color: #000a14;}
+   
+    .none{ display: none; }
+    .pr{ position: relative; }
+    .pa{ position: absolute; }
+    .db{ display: block }
+    .bm{ margin-left: auto; margin-right: auto; }
+    .fl{ float: left }
+    .fr{ float: right }
+    .txc{ text-align: center }
+    .ht{ display: block; text-indent: -9999em; overflow: hidden; }
+    .ovh{ overflow: hidden; }
+    .clearfix:before, .clearfix:after { content: ""; display: table; }
+    .clearfix:after{ clear: both; } /* For IE 6/7 (trigger hasLayout) */
+    .clearfix{ zoom: 1; }
+	
+	.footer{ position: absolute; left: 167px; bottom: 46px; line-height: 24px; text-align: center; }
+	#footer_ied{ color: #ccc; text-align: center; }
+	#footer_ied a{ color: #ccc; }
+	#footer_ied a:hover{ text-decoration: underline; }
+	
+	/*背景*/
+	.bg1{ position: relative; width: 100%; min-width: 1000px; height: 708px; overflow: hidden; }
+	.bg2{ position: relative; width: 100%; min-width: 1000px; background: url(ossweb-img/bg2.jpg) no-repeat center top; z-index: 2;}
+	.sbg{ position: relative; width: 1000px; margin: 0 auto; background-repeat: no-repeat; z-index: 2; }
+	.sbg1{ height: 786px; background-image: url(ossweb-img/sbg1.jpg); }
+	.sbg2{ height: 777px; background-image: url(ossweb-img/sbg2.jpg); }
+	.sbg3{ height: 808px; background-image: url(ossweb-img/sbg3.jpg); }
+	
+	/*bg1*/
+	.bg1-wrap{ position: absolute; top: 0; left: 50%; width: 1920px; margin-left: -960px; }
+	.bg1-top{ position: absolute; top: 0; left: 50%; width: 1920px; height: 85px; margin-left: -960px; background: url(ossweb-img/bg1-top.png) no-repeat;}
+	.logo-box{ position: absolute; top: 38px; left: 10%; width: 278px; height: 59px; z-index: 999;}
+	.logo1{ float: left; display: block; width: 142px; height: 49px; margin: 7px 16px 0 0; background: url(ossweb-img/logo1.png) no-repeat; }
+	.logo2{ float: left; display: block; width: 120px; height: 59px; background: url(ossweb-img/logo2.png); }
+	.text-box{ position: absolute; top: 53%; left: 50%; width: 687px; height: 47px; margin-left: -343.5px; background: url(ossweb-img/text-box.png) no-repeat;}
+	.text-box p{ color: #ebbd64; font-size: 16px; line-height: 47px; text-align: center; }
+	.btn-box{ position: absolute; top: 72%; left: 50%; width: 329px; height: 110px; margin-top: -20px; margin-left: -164px; }
+	.btn-box .btn{ display: block; width: 329px; height: 110px; background-repeat: no-repeat; }
+	.btn-box .btn1{ background-image: url(ossweb-img/btn1-1.png); }
+	.btn-box .btn1:hover{ background-image: url(ossweb-img/btn1-2.png); }
+	.btn-box .btn2{ background-image: url(ossweb-img/btn1-3.png); }
+	.login-box{ position: absolute; top: 90%; left: 50%; width: 329px; height: 16px; margin-top: -5px; margin-left: -164px; color: #998659; font-size: 14px; line-height: 16px; text-align: center; }
+	.login-box a{ color: #998659; font-size: 12px; line-height: 16px; }
+	
+	/*bg2*/
+	/*sbg1*/
+	.sbg-title{ padding-top: 111px; margin-bottom: 70px; color: #bea46e; font-size: 16px; line-height: 20px; text-align: center; }
+	.rollbox{ position: relative; width: 1000px; height: 537px; }
+	.rollbox ul{ width: 711px; height: 537px; overflow: hidden; margin: 0 auto;}
+	.rollbox a{ position: absolute; top: 250px; display: block; width: 30px; height: 44px; }
+	.rollbox .prev{ left: 23px; background-image: url(ossweb-img/btn-prev.png); }
+	.rollbox .next{ right: 23px; background-image: url(ossweb-img/btn-next.png); }
+	
+	/*sbg2*/
+	.video-box{ position: relative; width: 1019px; height: 543px; padding-top: 138px; margin: 0 auto;}
+    .video-box img{ margin: 0 auto;}
+    .video-btn-border{ position: absolute; top: 290px; right: 88px; width: 83px; height: 67px; background: url(ossweb-img/video-btn-border.png) no-repeat; }
+    .video-btn{ position: absolute; top: 296px; right: 102px;  display: block; width: 55px; height: 55px; background: url(ossweb-img/video-btn1.png) no-repeat center top; }
+   	.video-btn:hover{ background: url(ossweb-img/video-btn2.png) no-repeat; }
+   	
+   	/*sbg3*/
+   	.sbg3 h5{ margin-bottom: 10px; }
+   	.sbg3 img{ margin-left: 218px; }
+   	.sbg3 .btn4{ display: block; width: 160px; height: 47px; margin: 0 auto; background: url(ossweb-img/btn2-1.png) no-repeat;}
+   	.sbg3 .btn4:hover{ background: url(ossweb-img/btn2-2.png) no-repeat; }
+   	
+   	/*左侧导航*/
+   	.sel-box{ position: fixed; top: 200px; left: 10%;  z-index: 999;}
+   	.sel-box ul li{ width: 84px; height: 20px; margin-bottom: 16px; }
+   	.sel-box ul li a{ display: block; color: #817a6e; font-size: 14px; line-height: 20px; }
+   	.sel-box ul li a i{ display: none; float: left; width: 12px; height: 2px; background-color: #e0dad1; margin: 8px 2px 0 0; }
+   	.sel-box ul li a:hover i{ display: block; }
+   	.sel-box ul li a:hover{ color: #e0dad1; }
+   	.sel-box .arr{ width: 19px; height: 13px; background: url(ossweb-img/icon.png) no-repeat; }
+   	
+   	/*视频弹窗*/
+   	.pop-video{ display: none; width: 800px; height: 500px; border: 5px solid #000a14; background-color: #000a14; }
+   	.pop-video .video{ position: absolute; left: 0; top: 0; z-index: 2; width: 800px; height: 500px; }
+   	.pop-video .video-loading{ position: absolute; width: 100%; top: 50%; margin-top: -9px; color: #fff; text-align: center; }
+   	.pop-video .close{ position: absolute; top: -5px; right: -45px; width: 40px; height: 40px; font-size: 30px; line-height: 40px; text-align: center; color: #aaa; background-color: #000a14; }
+    .pop-video .close:hover{ color: #fff; }
+    
+    .flash{ opacity: 0; }
+    
+    .animation{-webkit-animation:fadeInUp 1s .2s ease both; -moz-animation:fadeInUp 1s .2s ease both;}
+	@-webkit-keyframes fadeInUp{
+		0%{opacity:0;
+		-webkit-transform:translateY(20px)}
+		100%{opacity:1;
+		-webkit-transform:translateY(0)}
+	}
+	@-moz-keyframes fadeInUp{
+		0%{opacity:0;
+		-moz-transform:translateY(20px)}
+		100%{opacity:1;
+		-moz-transform:translateY(0)}
+	}
+	
+	.animation1{-webkit-animation: wobble 4s linear infinite alternate;animation: wobble 4s linear infinite alternate;}
+	@-webkit-keyframes wobble{
+	0%{-webkit-transform:translateX(0%)}
+	30%{-webkit-transform:translateX(-0.5%)}
+	75%{-webkit-transform:translateX(0.5%)}
+	100%{-webkit-transform:translateX(0%)}
+	}
+	
+	.animation2{-webkit-animation: rotateX 10s linear infinite;animation: rotateX 10s linear infinite;}
+	@-webkit-keyframes rotateX{
+    0%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);}
+	}
+	
+    </style>
+    </head>
+    <body>
+        <h1>幸运玩家特权</h1>  
+        <div class="bg1" id="page1">
+        	<div class="logo-box clearfix">
+		        <a class="logo1" href="//tgp.qq.com/" target="_blank" title="TGP" onclick="PTTSendClick('link','tgp','TGP');"></a>
+		        <a class="logo2" href="//lol.qq.com/v2/" target="_blank" title="英雄联盟" onclick="PTTSendClick('btn','home','英雄联盟');"></a>
+		    </div>
+        	<div class="bg1-wrap">
+		        <video autoplay muted loop poster="ossweb-img/bg1.jpg" style="width: 100%;">
+		        		<source src="bgmp4-1920-708.mp4" type="video/mp4">
+		        		<img src="ossweb-img/bg1.jpg" width="100%" height="100%">
+		        </video>
+		        <div class="bg1-top"></div>
+		       	
+		       	<div class="text-box">
+		       		<p>鉴于您在召唤师峡谷的优异表现，现可激活平台特权体验资格，LOL全新客户端抢先预约体验！</p>
+		       	</div>
+		       	
+		        <div class="btn-box">
+		        	<a class="btn btn1" href="javascript:;" title="立即预约" onclick="PTTSendClick('btn','book now','立即预约');"></a>
+		        	<a class="btn btn2" style="display: none;" href="javascript:;" title="已预约" onclick="PTTSendClick('btn','already book','已预约');"></a>
+		        </div>
+		        <div class="login-box">
+			        <!--登录前状态 Start-->
+					<p id="unlogin">亲爱的用户，请 <a href="javascript:;" id="dologin">[登录]</a></p>
+					<!--登录前状态 End-->
+					<!--登录后状态 Start-->
+					<p id="logined" style="display:none">欢迎您，<span id='login_qq_span'></span>，<a href="javascript:;">[绑定大区]</a> <a href="javascript:;" id="dologout">[注销]</a></p>
+					<!--登录后状态 End-->
+		        </div>
+	        </div>
+        </div>
+        <div class="bg2">
+        	<div class="sbg sbg1" id="page2">        		      
+	        		<h5 class="sbg-title flash">客户端是《英雄联盟》的核心游戏体验之一。此次，英雄联盟的客户端更新标志着召唤师即将踏上全新的旅程。</h5>
+	       			
+	        		<div class="rollbox flash" id="rollbox">
+	        			<ul>
+	        				<li><img src="ossweb-img/rollbox-pic1.png" width="711" height="537" alt="助手界面"></li>
+	        				<li><img src="ossweb-img/rollbox-pic2.png" width="711" height="537" alt="符文界面"></li>
+	        				<li><img src="ossweb-img/rollbox-pic3.png" width="711" height="537" alt="选择界面"></li>
+	        			</ul>
+	        			<a class="prev" href="javascript:;" title="上一张" onclick="PTTSendClick('btn','prev','上一张');"></a>
+	        			<a class="next" href="javascript:;" title="下一张" onclick="PTTSendClick('btn','next','下一张');"></a>
+	        		</div>
+        	</div>
+        	<div class="sbg sbg2" id="page3">
+        		<div class="video-box flash">
+        			<div class="animation1">
+		        		<img src="ossweb-img/video-pic.png" width="1019" height="681" alt="凯特琳">
+		        		<div class="video-btn-border animation2"></div>
+		        		<a class="video-btn" href="javascript:popVideo('b01279q1c8n');" title="播放视频" onclick="PTTSendClick('btn','play','播放视频');"></a>
+		        	</div>
+        		</div>
+        	</div>
+        	<div class="sbg sbg3" id="page4">
+        		<h5 class="sbg-title flash">客户端是《英雄联盟》的核心游戏体验之一。此次，英雄联盟的客户端更新标志着召唤师即将踏上全新的旅程。</h5>
+        		<img class="flash" src="ossweb-img/sbg3-pic.png" width="591" height="302" alt="季中狂欢礼">
+        		<a class="btn4 flash" href="javascript:;" title="免费领取" onclick="PTTSendClick('btn','book now','免费领取');"></a>
+        		<div class="footer">
+	        		<script src="//ossweb-img.qq.com/images/js/foot.js"></script>
+	        	</div>
+        	</div>
+        </div>
+        
+         <!--左侧导航-->
+        <div class="sel-box">
+        	<ul>
+        		<li>
+        			<a href="javascript:scrollPage(page2);" title="最新客户端" onclick="PTTSendClick('btn','Latest client','最新客户端');">
+        				<i></i>
+        				<b>最新客户端</b>
+        			</a>
+        		</li>
+        		<li>
+        			<a href="javascript:scrollPage(page3);" title="未来战士" onclick="PTTSendClick('btn','Terminator','未来战士');">
+        				<i></i>
+        				<b>未来战士</b>
+        			</a>
+        		</li>
+        		<li>
+        			<a href="javascript:scrollPage(page4);" title="季中狂欢" onclick="PTTSendClick('btn','Mid season Carnival','季中狂欢');">
+        				<i></i>
+        				<b>季中狂欢</b>
+        			</a>
+        		</li>
+        		<li>
+        			<a href="javascript:scrollPage(page1);" title="TOP" onclick="PTTSendClick('btn','TOP','TOP');">
+        				<b>TOP</b>
+        			</a>
+        		</li>
+        	</ul>
+        	<div class="arr"></div>
+        </div>
+        
+        <!--视频弹窗-->
+        <div class="pop-video" id="pop-video">
+        	<div class="video" id="video"></div>
+        	<p class="video-loading">稍等片刻，载入中...</p>
+        	<a class="close" href="javascript:hideVideo();" title="关闭" onclick="PTTSendClick('btn','close','关闭');"="">×</a>
+        </div>
+    
+    <script src="//ossweb-img.qq.com/images/js/title.js"></script>
+    <script src="http://ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+	<script>
+		milo.addEvent(g("dologin"), "click", function() {
+			need("biz.login-min",function(LoginManager){
+			LoginManager.init({
+					needReloadPage:true
+				});
+				LoginManager.login();
+			});
+			return false;
+		});
+		milo.addEvent(g("dologout"), "click", function() {
+			need("biz.login-min",function(LoginManager){
+				LoginManager.logout();
+			});
+			return false;
+		});
+		milo.ready(function() {
+			need("biz.login-min",function(LoginManager){
+				LoginManager.checkLogin(function(){
+					g("login_qq_span").innerHTML = LoginManager.getUserUin();//获取QQ号
+				});
+			});
+		});
+	</script>
+	
+	<!-- 点击弹出视频浮层 -->
+	<script src="//imgcache.qq.com/tencentvideo_v1/tvp/js/tvp.player_v2.js" charset="utf-8"></script>
+	<script language="javascript">
+	    //开始 视频播放（点击播放） 需要用到浮层，这里可以用milo的dialog组建
+	    function openDialog(e){
+	        need("biz.dialog",function(Dialog){
+	            Dialog.show({
+	                id:e,
+	                bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+	                opacity:70      //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+	            });
+	        });
+	    }
+	    function closeDialog(){
+	        need("biz.dialog",function(Dialog){
+	            Dialog.hide();
+	        });
+	    }
+	    function playVideo(vid){
+	        var video = new tvp.VideoInfo();
+	        video.setVid(vid);//测试用视频vid，实际找产品提供
+	        var player = new tvp.Player();
+	        player.create({
+	            width:800,
+	            height:500,//视频高宽
+	            video:video,
+	            isVodFlashShowSearchBar:0,//播放器是否出现搜索框
+	            modId:"video", //视频插入domId
+	            autoplay:true,//是否自动播放，如果需要自动播放，设置为true
+	            flashWmode:"opaque",//这个属性必须加上
+	            vodFlashSkin:"http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf"//精简皮肤
+	        });
+	    }
+	    function popVideo(vid){
+	        openDialog('pop-video')
+	        playVideo(vid);
+	    }
+	    function hideVideo(){
+	        var flv_s = document.getElementById("video");
+	        if (flv_s){flv_s.innerHTML= "";}
+	        closeDialog();
+	    }
+	</script>
+	
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+	<script>
+		
+//		导航锚点+页面内容向上淡入
+		function afterShow(id){
+			$(id).find('.flash').addClass('animation');
+		}
+		
+		function scrollPage(id){
+			var $offset = $(id).offset().top;
+			$('html,body').stop().animate({'scrollTop': $offset});
+
+			afterShow(id);
+			
+		}
+		
+		function scrollHeight(id){
+			var $scrollHeight = $(window).scrollTop();
+			if($scrollHeight>=$(id).offset().top-200){
+				afterShow(id);		
+			}
+		}
+		$(window).scroll(function(){
+			scrollHeight('#page2');
+			scrollHeight('#page3');
+			scrollHeight('#page4');
+			
+		})
+	
+		
+		
+//		轮播图
+		var $rollbox = $('#rollbox ul li');
+		var $index = 0;
+		var $arr_left = $('#rollbox .prev');
+		var $arr_next = $('#rollbox .next');
+		var i = 1;
+		
+		function rollPic(){			
+			$rollbox.hide().eq($index).show();
+		}
+		
+		function autoPlay(){
+			$index++;
+			if($index>$rollbox.length-1){
+				$index = 0;
+			}
+			rollPic($index);
+			
+		}
+		var show = setInterval('autoPlay()',3000);
+
+		
+		$arr_left.on('click',function(){
+			if(i=1){
+				clearInterval(show);
+				i=0;
+			}
+			
+			if($index>0){
+				$index--;
+			}
+			
+			else if($index == 0){ 
+				$index = $rollbox.length-1; 
+			}
+			rollPic($index);
+			show = setInterval('autoPlay()',3000);
+			i=1;
+		});
+		
+		$arr_next.on('click',function(){
+			if(i=1){
+				clearInterval(show);
+				i=0;
+			}
+			
+			if($index<$rollbox.length-1){
+				$index++;
+			}
+			
+			else if($index == $rollbox.length-1){ 
+				$index = 0; 
+			}
+			rollPic($index);
+			show = setInterval('autoPlay()',3000);
+			i=1;
+		});
+		
+//		$rollbox.on('mousemove',function(){
+//			if(i=1){
+//				clearInterval(show);
+//				i=0;
+//			}
+//		})
+//		$rollbox.on('mouseout',function(){
+//			show = setInterval('autoPlay()',3000);
+//			i=1;
+//		})
+		
+		
+		
+		
+	</script>
+	
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <script>
+    var setSite={ //设置网站属性
+    siteType:"a20170516lollucky", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+    pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+    pageName:"首页", //必填项:页面中文名
+    osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+    stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+    </script>
+    </body>
+</html>
