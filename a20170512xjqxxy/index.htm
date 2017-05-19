@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta name="author" content="Tencent-CP">
+<meta name="format-detection" content="telephone=no" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="Description" content="龙之谷冒险家乐园是龙之谷手游官方同人社区。冒险家乐园内包含了最新最全的龙之谷同人图片，龙之谷同人小说，龙之谷cosplay等龙之谷周边同人内容。">
+<meta name="Keywords" content="龙之谷,龙之谷手游,龙之谷乐园,冒险家乐园,龙之谷同人,龙之谷cosplay,龙之谷cos,龙之谷小说">
+<script type="text/javascript" src="js/Rem.min.js"></script>
+<title>仙剑奇侠 - FIFA Online 3足球在线官方网站-腾讯游戏</title>
+<!-- 设计：cp  |  重构：cp  |  创建：2017-05-12 -->
+<style type="text/css">
+html,body{ width: 100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,figure{margin:0;padding:0;border:0;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ol,ul{list-style:none}
+body{font-family:"Microsoft YaHei",Helvetica,STHeiTi,sans-serif; font-size: .24rem;color:#333;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-select:text;-webkit-touch-callout:none;-webkit-tap-highlight-color: transparent;word-break:break-all;word-wrap:break-word;}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+h1{width: 100%; height: 0; font-size: 0; text-indent: -9999em; line-height: 500%; overflow: hidden;}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
+input,select,form,textarea{vertical-align:middle;outline:none}
+img{outline: none; display: block;}
+strong,b,em,i{ font-weight: normal; font-style: normal;}
+a{text-decoration:none;outline:0;color:#333}
+div,a,input,select,option{outline:none}
+table{border-collapse:collapse;border-spacing:0}
+@media screen and (min-width:320px) {
+    html{font-size:28.17px}
+}
+@media screen and (min-width:375px) {
+    html{font-size:33.01px}
+}
+@media screen and (min-width:425px) {
+    html{font-size:37.41px}
+}
+@media screen and (min-width:640px) {
+    html{font-size:56.34px}
+}
+@media screen and (min-width:750px) {
+    html{font-size:66.02px}
+}
+@media screen and (min-width:768px) {
+    html{font-size:67.61px}
+}
+@media screen and (min-width:1024px) {
+    html{font-size:90.14px}
+}
+@media screen and (min-width:1080px) {
+    html{font-size:95.07px}
+}
+@media screen and (min-width:1136px) {
+    html{font-size:100px}
+}
+@media screen and (min-width:1440px) {
+    html{font-size:126.76px}
+}
+@media screen and (min-width:1536px) {
+    html{font-size:135.21px}
+}
+@media screen and (min-width:1920px) {
+    html{font-size:169.01px}
+}
+@media screen and (min-width:2560px) {
+    html{font-size:225.35px}
+}
+
+.db{display: block;}
+.dil{display: inline-block;}
+.bc{margin-left: auto;margin-right: auto}
+.pr{position: relative;}
+.pa{position: absolute;}
+.fl{float: left;}
+.txc{text-align: center;}
+.ovh{overflow: hidden;}
+.none{display: none;}
+.p-none{ pointer-events: none;}
+.ht{display: block;overflow: hidden;text-indent: -999em;}
+.clearfix:after,.clearfix:before{content: "";display: table;}
+.clearfix:after{clear: both;}
+.spr{ background-image: url(ossweb-img/sprites.png); background-repeat: no-repeat; background-size: 11.36rem; }
+
+.wrap{ width: 11.36rem;}
+.footer{ margin-top: -.02rem; line-height: .4rem; color: #fff; text-align: center; background-color: #000; }
+/* 旋屏提示 */
+.mask{width:100%; height:100%; background:#32373b;position: fixed;left:0;top: 0;z-index:99999;display:block;}
+.mask-box{width: 100%;height: 378px;position: absolute;top: 50%;left:0;margin-top: -189px;}
+.mask-pic{width: 291px;height: 291px;margin: 0 auto;text-align: center;}
+.mask span{font-size:33px;display:block;color:#ffd40a; text-align:center;width: 100%;height: 75px;padding-top: 30px;}
+.mask i{width: 192px;height: 291px;background: url(ossweb-img/screen-tips.png) 0 0 no-repeat;background-size: 100%;display: block;margin: 0 auto;-webkit-animation: maskAni 1.5s ease infinite alternate;animation: maskAni 1.5s ease infinite alternate;}
+@-webkit-keyframes maskAni{
+    0% {-webkit-transform:rotate(-90deg);}
+    30% {-webkit-transform:rotate(-90deg);}
+    70%{-webkit-transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+
+@media screen and (min-aspect-ratio: 12/9) {
+    #mask{ display: none;}
+    .slider{ display: none !important;}
+}
+
+/*内容*/
+.wrap-box{ width: 100%; height: 6.34rem; }
+.wrap-left{ float: left; width: 2.41rem; height: 6.4rem; }
+.wrap-right{ float: left; width: 8.95rem; height: 6.4rem; }
+.header-left{ width: 2.41rem; height: 1.94rem; background: url(ossweb-img/logo.jpg) no-repeat; background-size: 100%; }
+
+
+/*左侧导航*/
+.nav-box{ position: relative; width: 2.41rem; height: 4.4rem; margin-top: -.01rem; overflow: hidden; }
+.nav-box ul{ width: 2.41rem; height: 4.4rem; }
+.nav-box ul li{ width: 2.41rem; height: 1.1rem; }
+.nav-box ul li a{ display: block; width: 2.41rem; height: 1.1rem; background-repeat: no-repeat; background-size: 2.41rem 4.46rem; }
+.nav-box .nav1 li a{ background-image: url(ossweb-img/nav1-1.jpg); }
+.nav-box .nav2 li a{ background-image: url(ossweb-img/nav2-1.jpg); }
+.nav-box ul .li-1 a{ background-position: 0 0; }
+.nav-box ul .li-2 a{ background-position: 0 -1.12rem; }
+.nav-box ul .li-3 a{ background-position: 0 -2.24rem; }
+.nav-box ul .li-4 a{ background-position: 0 -3.36rem; }
+.nav-box .nav1 li .active{ background-image: url(ossweb-img/nav1-2.jpg); }
+.nav-box .nav2 li .active{ background-image: url(ossweb-img/nav2-2.jpg); }
+
+/*头部*/
+.header-right{ width: 8.95rem; height: 1.94rem; margin-left: -.01rem; }
+.header-right1{ background-image: url(ossweb-img/header-right1.jpg); background-repeat: no-repeat; background-size: 8.95rem 1.94rem; }
+.header-right1 .player-pic{ float: left; padding: .34rem 0 0 .47rem; margin-right: .17rem; } 
+.header-right1 .player-pic img{ width: 1.23rem; height: 1.23rem; border: .02rem solid #c2a54e; border-radius: 50%; }
+.header-right1 .player-name{ float: left; padding-top: .6rem; }
+.header-right1 .player-name h5{ margin-bottom: .17rem; color: #757783; font-size: .22rem; line-height: .26rem; }
+.header-right1 .player-name p{ color: #fff7e4; font-size: .24rem; line-height: .28rem; }
+.header-right1 .xinyue-box{ float: right; width: 2.17rem; height: .9rem; padding-left: .21rem; margin: .52rem .43rem 0 0; background-position: -.04rem -.62rem; }
+.header-right1 .xinyue-box p{ padding-left: .26rem; color: #cf8efe; font-size: .2rem; line-height: .4rem; }
+.header-right1 .xinyue-box span{ color: #94f0fd; }
+.header-right1 .xinyue-box .integral{ margin-top: .05rem; }
+.header-right1 .xinyue-box i{ display: block; float: left; width: .16rem; height: .16rem; margin-top: .14rem; }
+.header-right1 .xinyue-box .integral i{ background-position: -.01rem -.04rem; }
+.header-right1 .xinyue-box .additive i{ background-position: -.01rem -.27rem; }
+
+.header-right2{ background-image: url(ossweb-img/header-right2.jpg); background-repeat: no-repeat; background-size: 8.95rem 1.94rem; }
+.header-right2 .level-box{ position: relative; padding-left: .08rem; }
+.header-right2 .level-box .level-line-box{ position: absolute; top: .59rem; left: .23rem; width: 8.18rem; height: .04rem; }
+.header-right2 .level-box .level-line{ display: block; width: 100%; height: .04rem; background: -webkit-gradient(linear, left top, left bottom, from(#9b76e3), to(#7f49a8)); }
+.header-right2 .level-name{ position: absolute; top: .24rem; left: .08rem; z-index: 2; overflow: hidden; }
+.header-right2 .level-name li{ float: left; width: .66rem; color: #4b5069; font-size: .15rem; line-height: .2rem; text-align: center; }
+.header-right2 .level-name li p:nth-of-type(2){ padding-top: .35rem; }
+.header-right2 .level-name .ln-1{ width: .31rem; }
+.header-right2 .level-name .ln-1 p{ padding-top: .56rem; }
+.header-right2 .level-name .ln-2{ margin-right: .43rem; }
+.header-right2 .level-name .ln-3{ margin-right: .43rem; }
+.header-right2 .level-name .ln-4{ margin-right: .43rem; }
+.header-right2 .level-name .ln-5{ margin-right: .50rem; }
+.header-right2 .level-name .ln-6{ width: .51rem; margin-right: .57rem; }
+.header-right2 .level-name .ln-7{ width: .55rem; margin-right: .57rem; }
+.header-right2 .level-name .ln-8{ width: .56rem; margin-right: .5rem; }
+
+.header-right2 .level-main{ position: relative; z-index: 3; padding-top: .46rem; margin-bottom: .4rem ; }
+.header-right2 .level-main li{ float: left; width: .32rem; height: .33rem; background-position: -4.51rem -.02rem; }
+.header-right2 .level-main li i{ display: block; width: .24rem; height: .24rem; margin: .03rem auto 0; background: url(ossweb-img/sprites.png) no-repeat; background-position: -.65rem -.32rem; background-size: 11.36rem; }
+.header-right2 .level-main li .on{ background-position: -.65rem -.03rem; }
+.header-right2 .level-main .lm-6 i,
+.header-right2 .level-main .lm-7 i,
+.header-right2 .level-main .lm-8 i,
+.header-right2 .level-main .lm-9 i{ width: .3rem; height: .21rem; margin: .05rem auto 0; background-position: -1rem -.03rem; }
+.header-right2 .level-main .lm-1{ margin-right: .17rem; }
+.header-right2 .level-main .lm-2{ margin-right: .76rem; }
+.header-right2 .level-main .lm-3{ margin-right: .77rem; }
+.header-right2 .level-main .lm-4{ margin-right: .77rem; }
+.header-right2 .level-main .lm-5{ margin-right: .77rem; }
+.header-right2 .level-main .lm-6{ margin-right: .78rem; }
+.header-right2 .level-main .lm-7{ margin-right: .8rem; }
+.header-right2 .level-main .lm-8{ margin-right: .79rem; }
+
+.header-right2 .member-box{ padding-left: .34rem; }
+.header-right2 .member-box .member-name{ float: left; width: 2.34rem; padding-top: .17rem; }
+.header-right2 .member-box .member-name i{ display: block; float: left; width: .17rem; height: .2rem; margin: .02rem .1rem 0 0; background-position: -.33rem -.03rem; }
+.header-right2 .member-box .member-name p{ color: #7d829f; font-size: .2rem; line-height: .24rem; }
+.header-right2 .member-box .member-current{ float: left; width: 3rem; padding-left: .4rem; margin: .17rem 0 0 0; }
+.header-right2 .member-box .member-current i{ float: left; width: .21rem; height: .2rem; margin: .02rem .09rem 0 0; background-position: -.3rem -.3rem; }
+.header-right2 .member-box .member-current p{ color: #7d829f; font-size: .2rem; line-height: .24rem; }
+.header-right2 .member-box .member-current p span{ color: #9e51d4; }
+.header-right2 .member-box .member-current p b{ color: #94f0fd; }
+.header-right2 .member-box .member-integral{ float: left; margin-left: .07rem; width: 2.38rem; height: .6rem; padding-left: .21rem; background-position: -2.55rem -.62rem; }
+.header-right2 .member-box .member-integral i{ float: left; width: .16rem; height: .16rem; margin: .22rem .09rem 0 0; background-position: -.01rem -.04rem; }
+.header-right2 .member-box .member-integral p{ color: #cf8efe; font-size: .2rem; line-height: .56rem; }
+.header-right2 .member-box .member-integral p span{ color: #94f0fd; }
+
+/*正文部分*/
+.nav-main{ position: relative; width: 8.95rem; height: 4.4rem; margin: -.01rem 0 0 -.01rem; background-image: url(ossweb-img/bg-nav-main.jpg); background-repeat: no-repeat; background-size: 8.95rem 4.4rem; } 
+
+.nav1-main-title{ width: 2.75rem; height: .52rem; padding-top: .3rem; margin: 0 auto; background-repeat: no-repeat; background-position: center bottom; background-size: 2.75rem .52rem; }
+
+/*nav1-main 权益*/
+.nav1-main-title1{ margin-bottom: .27rem; background-image: url(ossweb-img/nav1-main-title1.png); }
+.p-show li{ float: left; margin-right: .33rem; }
+.p-show li img{ width: 1.96rem; height: 1.53rem; }
+
+/*nav1-main 权益介绍*/
+.nav1-main-title2{ margin-bottom: .27rem; background-image: url(ossweb-img/nav1-main-title2.png); }
+.how-get{ position: absolute; top: .42rem; right: .65rem; width: 1.8rem; }
+.how-get a{ display: block; width: 1.8rem; height: .26rem; }
+.how-get a i{ float: left; width: .27rem; height: .26rem; margin: -.02rem .06rem 0 0; background-position: -1rem -.29rem;  }
+.how-get p{ color: #6e6e6e; font-size: .2rem; line-height: .24rem; }
+.introduce-pic{ padding-left: .52rem; margin-bottom: .52rem; }
+.introduce-pic ul li{ float: left; margin-right: .23rem; }
+.introduce-pic ul li img{ width: 1.76rem; height: 1.53rem; }
+.introduce-text{ width: 6.28rem; height: .5rem; margin: 0 auto; }
+.introduce-text a{ display: block; width: 6.28rem; height: .5rem; background: url(ossweb-img/introduce-text.png) no-repeat; background-size: 6.28rem .5rem;}
+
+/*nav1-main 最新活动 敬请期待*/
+.expect{ padding-top: 1.56rem; margin: 0 auto; width: 3.57rem; height: .65rem; background: url(ossweb-img/expect.png) no-repeat center bottom; background-size: 3.57rem .65rem; }
+
+/*nav1-main 我的活动*/
+.my-service{ padding: .16rem 0 0 .81rem; overflow: hidden;} 
+.my-service ul li{ float: left; margin: 0 .34rem .21rem 0; }
+.my-service ul li a{ display: block; width: 2.17rem; height: 1.94rem; }
+.my-service ul li a img{ width: 2.17rem; height: 1.94rem; }
+
+/*nav2-main 最新活动  福星*/
+.mascot{ position: relative; overflow: hidden;}
+.mascot .btn-browse{ position: absolute; top: .18rem; left: .11rem; }
+.mascot .btn-browse a{ display: block; width: 1.69rem; height: .59rem; background: url(ossweb-img/btn-browse.jpg) no-repeat; background-size: 100%; }
+.btn-return{ position: absolute; top: .52rem; right: .45rem; }
+.btn-return a{ display: block; width: .72rem; height: .24rem; background-position: -2.55rem -1.8rem; }
+.mascot .nav2-main-title{ width: 3.14rem; height: .3rem; padding-top: .38rem; margin: 0 auto .2rem; background: url(ossweb-img/mascot1-text.jpg) no-repeat center bottom; background-size: 100%; }
+.mascot p{ color: #262936; font-size: .18rem; line-height: .22rem; text-align: center; }
+.mascot .nav2-main-text{ margin-bottom: .68rem; }
+.mascot .nav2-main-text span{ margin-right: .2rem; }
+.mascot .mascot-pic{ width: 4.43rem; height: 1.43rem; margin: 0 auto .7rem; background: url(ossweb-img/mascot1-pic.png) no-repeat; background-size: 100%;  }
+
+.mascot .mascot-main{ padding: 1.3rem 0 0 2.54rem; margin-bottom: 1.02rem; }
+.mascot .mascot-main i{ float: left; width: .35rem; height: .35rem; margin-right: .22rem; }
+.mascot .mascot-main .i-1{ background-position: -2.6rem -1.36rem; }
+.mascot .mascot-main .i-2{ background-position: -3.12rem -1.36rem; }
+.mascot .mascot-main .i-3{ background-position: -3.64rem -1.36rem; }
+.mascot .mascot-main p{ margin-bottom: .18rem; font-size: .2rem; line-height: .35rem; text-align: left; }
+
+.mascot2 .btn-return a{ background-position: -3.47rem -1.8rem; }
+
+
+/*nav2-main 称号权益 称号权益*/
+.title-rights{ padding: .26rem 0 0 1.11rem; }
+.title-rights ul li{ float: left; margin: 0 .81rem .12rem 0; }
+.title-rights ul li a{ display: block; width: 2.89rem; height: 1.9rem; }
+.title-rights ul li a img{ width: 2.89rem; height: 1.9rem; }
+
+/*nav2-main 称号权益 每周权益*/
+.week-rights { padding-top: .4rem; overflow: hidden;}
+.week-rights-title{ width: 5.1rem; height: .24rem; margin: 0 auto .4rem; background-image: url(ossweb-img/week-rights-title1.jpg); background-repeat: no-repeat; background-size: 100%; }
+.week-rights-main ul{ margin-bottom: .3rem; }
+.week-rights-main li{ position: relative; float: left; width: 1.96rem; height: 1.53rem; margin-right: .23rem; }
+.week-rights-main li img{ width: 1.96rem; height: 1.53rem; }
+.week-rights-main li b{ position: absolute; top: 1.12rem; color: #252733; font-size: .2rem; text-align: center; }
+.week-rights-main li:nth-of-type(1) b{ left: .43rem }
+.week-rights-main li:nth-of-type(2) b{ left: .22rem }
+.week-rights-main li:nth-of-type(3) b{ left: .34rem }
+.week-rights-main li:nth-of-type(4) b{ left: .34rem }
+.week-rights p{ color: #292f47; font-size: .18rem; line-height: .22rem; text-align: center;}
+.btn-get{ width: 2.47rem; height: .8rem; margin: 0 auto .2rem; }
+.btn-get a{ display: block; width: 2.47rem; height: .8rem; background: url(ossweb-img/btn-get.jpg); background-size: 100%;}
+
+.week-rights2 .week-rights-title{ background-image: url(ossweb-img/week-rights-title2.jpg); }
+.week-rights3 .week-rights-title{ background-image: url(ossweb-img/week-rights-title3.jpg); }
+
+/*nav2-main 称号权益 成长礼*/
+.grow-up { padding-top: .4rem; overflow: hidden; }
+.grow-up-title{ width: 5.1rem; height: .24rem; margin: 0 auto .4rem; background-image: url(ossweb-img/grow-up-title1.jpg); background-repeat: no-repeat; background-size: 100%; }
+.grow-up-main ul{ margin-bottom: .3rem; }
+.grow-up-main li{ position: relative; float: left; width: 1.96rem; height: 1.53rem; margin-right: .23rem; }
+.grow-up-main li img{ width: 1.96rem; height: 1.53rem; }
+.grow-up-main li b{ position: absolute; top: 1.12rem; color: #252733; font-size: .2rem; text-align: center; }
+.grow-up-main li:nth-of-type(1) b{ left: .43rem }
+.grow-up-main li:nth-of-type(2) b{ left: .22rem }
+.grow-up-main li:nth-of-type(3) b{ left: .34rem }
+.grow-up-main li:nth-of-type(4) b{ left: .34rem }
+.grow-up p{ color: #292f47; font-size: .18rem; line-height: .22rem; text-align: center;}
+
+.grow-up2 .grow-up-title{ background-image: url(ossweb-img/grow-up-title2.jpg); } 
+.grow-up3 .grow-up-title{ background-image: url(ossweb-img/grow-up-title3.jpg); }
+</style>
+</head> 
+<body>
+	<h1>仙剑奇侠</h1>
+	<div class="wrap pr clearfix" id="wrap">
+		<div class="wrap-box">
+			<div class="wrap-left">
+				<div class="header-left"></div>
+				<div class="nav-box">
+					<ul class="nav1" style="display: none;">
+						<li class="li-1"><a class="active" href="javascript:;" title="游戏权益" ontouchend="PTTSendClick('btn','game rights','游戏权益');"></a></li>
+						<li class="li-2"><a href="javascript:;" title="权益介绍" ontouchend="PTTSendClick('btn','equity presentation','权益介绍');"></a></li>
+						<li class="li-3"><a href="javascript:;" title="最新活动" ontouchend="PTTSendClick('btn','latest activity','最新活动');"></a></li>
+						<li class="li-4"><a href="javascript:;" title="我的服务" ontouchend="PTTSendClick('btn','my service','我的服务');"></a></li>
+					</ul>
+					
+					<ul class="nav2">
+						<li class="li-1"><a class="active" href="javascript:;" title="游戏权益" ontouchend="PTTSendClick('btn','game rights','游戏权益');"></a></li>
+						<li class="li-2"><a href="javascript:;" title="权益介绍" ontouchend="PTTSendClick('btn','equity presentation','权益介绍');"></a></li>
+						<li class="li-3"><a href="javascript:;" title="最新活动" ontouchend="PTTSendClick('btn','latest activity','最新活动');"></a></li>
+						<li class="li-4"><a href="javascript:;" title="称号权益" ontouchend="PTTSendClick('btn','title rights','称号权益');"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrap-right">
+				<div class="header-right header-right1 clearfix" style="display: none;">
+					<div class="player-pic">
+						<img src="ossweb-img/player-img.jpg" alt="玩家">
+					</div>
+					
+					<div class="player-name">
+						<h5>玩家名称</h5>
+						<p>阿斯兰的哈萨克</p>
+					</div>
+					
+					<div class="xinyue-box spr">
+						<div class="integral clearfix">
+							<i class="spr"></i>
+							<p>心悦积分: <span>150000</span></p>
+						</div>	
+						<div class="additive clearfix">
+							<i class="spr"></i>
+							<p>心悦加成: <span>+2%</span></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="header-right header-right2 clearfix">
+					<div class="level-box">
+						<ul class="level-name clearfix">
+							<li class="ln-1">						
+								<p>0</p>
+							</li>
+							<li class="ln-2">
+								<p>游戏家L1</p>
+								<p>1</p>
+							</li>
+							<li class="ln-3">
+								<p>游戏家L2</p>
+								<p>1000</p>
+							</li>
+							<li class="ln-4">
+								<p>游戏家L3</p>
+								<p>5000</p>
+							</li>
+							<li class="ln-5">
+								<p>游戏家L4</p>
+								<p>10000</p>
+							</li>
+							<li class="ln-6">
+								<p>心悦V1</p>
+								<p>50000</p>
+							</li>
+							<li class="ln-7">
+								<p>心悦V2</p>
+								<p>100000</p>
+							</li>
+							<li class="ln-8">
+								<p>心悦V3</p>
+								<p>800000</p>
+							</li>
+							<li class="ln-9">
+								<p>心悦V4</p>
+								<p>1500000</p>
+							</li>
+						</ul>
+						<ul class="level-main clearfix">
+							<li class="lm-1 spr"><i class="on"></i></li>
+							<li class="lm-2 spr"><i></i></li>
+							<li class="lm-3 spr"><i></i></li>
+							<li class="lm-4 spr"><i></i></li>
+							<li class="lm-5 spr"><i></i></li>
+							<li class="lm-6 spr"><i></i></li>
+							<li class="lm-7 spr"><i></i></li>
+							<li class="lm-8 spr"><i></i></li>
+							<li class="lm-9 spr"><i></i></li>
+						</ul>
+						<div class="level-line-box">
+							<i class="level-line"></i>
+						</div>
+					</div>
+					<div class="member-box clearfix">
+						<div class="member-name clearfix">
+							<i class="spr"></i>
+							<p>你好，<span>435107705</span></p>
+						</div>
+						<div class="member-current clearfix">
+							<i class="spr"></i>
+							<p>当前<span>心悦V2</span>积分获取<b>+2%</b></p>
+						</div>
+						<div class="member-integral spr clearfix">
+							<i class="spr"></i>
+							<p>心悦积分 : <span class="current-integral">150000</span></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="nav-main nav1-main">
+					<div class="nav1-main-title nav1-main-title1"></div>
+					
+					<div class="rollbox">
+						<div id="rollbox">
+							<ul class="p-show clearfix">
+								<li><img src="ossweb-img/rollbox-img1.jpg" alt="银两*48888"></li>
+								<li><img src="ossweb-img/rollbox-img2.jpg" alt="银两*48888"></li>
+								<li><img src="ossweb-img/rollbox-img3.jpg" alt="银两*48888"></li>
+							</ul>
+						</div>
+						<a id="m_left" class="spr" href="javascript:;" title="如何获得积分" ontouchend="PTTSendClick('btn','how get','如何获得积分');"></a>
+						<a id="m_right" class="spr" href="javascript:;" title="如何获得积分" ontouchend="PTTSendClick('btn','how get','如何获得积分');"></a>
+					</div>
+					
+				</div>
+				<div class="nav-main nav1-main" style="display: none;">
+					<div class="nav1-main-title nav1-main-title2"></div>
+					<div class="how-get">
+						<a class="clearfix" href="javascript:;" title="如何获得积分" ontouchend="PTTSendClick('btn','how get','如何获得积分');">
+							<i class="spr"></i>
+							<p>如何获得积分</p>
+						</a>
+					</div>
+					<div class="introduce-pic">
+						<ul class="clearfix">
+							<li><img src="ossweb-img/introduce-pic1.jpg" alt="奖励名称"></li>
+							<li><img src="ossweb-img/introduce-pic1.jpg" alt="奖励名称"></li>
+							<li><img src="ossweb-img/introduce-pic1.jpg" alt="奖励名称"></li>
+							<li><img src="ossweb-img/introduce-pic1.jpg" alt="奖励名称"></li>
+						</ul>
+					</div>
+					<div class="introduce-text">
+						<a href="javascript:;" title="前往积分兑换" ontouchend="PTTSendClick('btn','go to','前往积分兑换');"></a>
+					</div>
+				</div>
+				<div class="nav-main nav1-main" style="display: none;">
+					<!--敬请期待-->
+					<div class="expect"></div>
+				</div>
+				<div class="nav-main nav1-main" style="display: none;">
+					<!--我的服务-->
+					<div class="my-service">
+						<ul class="clearfix">
+							<li>
+								<a href="javascript:;" title="客服电话" ontouchend="PTTSendClick('btn','phone number','客服电话');">
+									<img src="ossweb-img/my-service-pic1.jpg" alt="客服电话">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="在线管家" ontouchend="PTTSendClick('btn','butler online','在线管家');">
+									<img src="ossweb-img/my-service-pic2.jpg" alt="在线管家">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="电话预约" ontouchend="PTTSendClick('btn','phone booking','电话预约');">
+									<img src="ossweb-img/my-service-pic3.jpg" alt="电话预约">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="自助工具" ontouchend="PTTSendClick('btn','self-help tools','自助工具');">
+									<img src="ossweb-img/my-service-pic4.jpg" alt="自助工具">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="账户安全" ontouchend="PTTSendClick('btn','accounts safe','账户安全');">
+									<img src="ossweb-img/my-service-pic5.jpg" alt="账户安全">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="常见问题" ontouchend="PTTSendClick('btn','common problem','常见问题');">
+									<img src="ossweb-img/my-service-pic6.jpg" alt="常见问题">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class="nav-main nav2-main" style="display: none;"></div>
+				<div class="nav-main nav2-main" style="display: none;"></div>
+				<div class="nav-main nav2-main" style="display: none;">
+					
+					<!--福星-->
+					<div class="mascot mascot1" style="display: none;">
+						<div class="btn-browse">
+							<a href="javascript:;" title="奖励浏览" ontouchend="PTTSendClick('btn','reward browse','奖励浏览');"></a>
+						</div>
+						<div class="btn-return">
+							<a class="spr" href="javascript:;" title="返回" ontouchend="PTTSendClick('btn','return','返回');"></a>
+						</div>
+						<div class="nav2-main-title"></div>
+						<p class="nav2-main-text">本星期获得掀起次数：<span>N</span>剩余掀起次数：<span>X</span></p>
+						<div class="mascot-pic"></div>
+						<p>【心悦刮刮乐】以自然周为周期，每星期一0点【重置】；仅限心悦成长值≥10000的用户参与 。</p>
+					</div>
+					
+					<div class="mascot mascot2">
+						<div class="btn-return">
+							<a class="spr" href="javascript:;" title="返回" ontouchend="PTTSendClick('btn','return','返回');"></a>
+						</div>
+						<div class="mascot-main">
+							<i class="i-1 spr"></i><p>金杯子：文字说明道具及数量即可；</p>
+							<i class="i-2 spr"></i><p>银杯子：文字说明道具及数量即可；</p>
+							<i class="i-3 spr"></i><p>铜杯子：文字说明道具及数量即可；</p>
+						</div>
+						<p>获得活动资格的用户，本星期内可免费掀起3次杯子；</p>
+						<p>本星期内累计充值XX元可额外掀起1次，最多获得俩次额外次数。</p>
+					</div>
+				</div>
+				<div class="nav-main nav2-main" style="display: none;">
+					
+					<!--称号权益-->
+					<div class="title-rights" style="display: none;">
+						<ul class="clearfix">
+							<li>
+								<a href="javascript:;" title="身份成长礼" ontouchend="PTTSendClick('btn','phone number','客服电话');">
+									<img src="ossweb-img/title-rights-pic1.jpg" alt="身份成长礼">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="每周权益" ontouchend="PTTSendClick('btn','butler online','在线管家');">
+									<img src="ossweb-img/title-rights-pic2.jpg" alt="每周权益">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="神秘商店" ontouchend="PTTSendClick('btn','phone booking','电话预约');">
+									<img src="ossweb-img/title-rights-pic3.jpg" alt="神秘商店">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="敬请期待" ontouchend="PTTSendClick('btn','self-help tools','自助工具');">
+									<img src="ossweb-img/title-rights-pic4.jpg" alt="敬请期待">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--每周权益-->
+					<div class="week-rights week-rights1" style="display: none;">
+						<div class="btn-return">
+							<a class="spr" href="javascript:;" title="返回" ontouchend="PTTSendClick('btn','return','返回');"></a>
+						</div>
+						<div class="week-rights-title"></div>
+						<div class="week-rights-main">
+							<ul class="clearfix">
+								<li>		
+									<img src="ossweb-img/prop-img1.jpg" alt="银两*48888">
+									<b>银两*48888</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img2.jpg" alt="大回生仙饮(绑）*5">
+									<b>大回生仙饮(绑)*5</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img3.jpg" alt="心悦成长值+5">
+									<b>心悦成长值+5</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img3.jpg" alt="心悦成长值+5">
+									<b>心悦成长值+5</b>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-get">
+							<a class="spr" href="javascript:;" title="立即领取" ontouchend="PTTSendClick('btn','get now','立即领取');"></a>
+						</div>
+						<p>以自然周为周期，每星期一0点【重置】；仅限获得“朱门绣户”称号的用户参与 。</p>
+					</div>
+					
+					<div class="week-rights week-rights2" style="display: none;">
+						<div class="btn-return">
+							<a class="spr" href="javascript:;" title="返回" ontouchend="PTTSendClick('btn','return','返回');"></a>
+						</div>
+						<div class="week-rights-title"></div>
+						<div class="week-rights-main">
+							<ul class="clearfix">
+								<li>		
+									<img src="ossweb-img/prop-img1.jpg" alt="银两*48888">
+									<b>银两*48888</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img2.jpg" alt="大回生仙饮(绑）*5">
+									<b>大回生仙饮(绑)*5</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img3.jpg" alt="心悦成长值+5">
+									<b>心悦成长值+5</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img3.jpg" alt="心悦成长值+5">
+									<b>心悦成长值+5</b>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-get">
+							<a class="spr" href="javascript:;" title="立即领取" ontouchend="PTTSendClick('btn','get now','立即领取');"></a>
+						</div>
+						<p>以自然周为周期，每星期一0点【重置】；仅限获得“富贵逼人”称号的用户参与 。</p>
+					</div>
+					
+					<div class="week-rights week-rights3" style="display: none;">
+						<div class="btn-return">
+							<a class="spr" href="javascript:;" title="返回" ontouchend="PTTSendClick('btn','return','返回');"></a>
+						</div>
+						<div class="week-rights-title"></div>
+						<div class="week-rights-main">
+							<ul class="clearfix">
+								<li>		
+									<img src="ossweb-img/prop-img1.jpg" alt="银两*48888">
+									<b>银两*48888</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img2.jpg" alt="大回生仙饮(绑）*5">
+									<b>大回生仙饮(绑)*5</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img3.jpg" alt="心悦成长值+5">
+									<b>心悦成长值+5</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img3.jpg" alt="心悦成长值+5">
+									<b>心悦成长值+5</b>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-get">
+							<a class="spr" href="javascript:;" title="立即领取" ontouchend="PTTSendClick('btn','get now','立即领取');"></a>
+						</div>
+						<p>以自然周为周期，每星期一0点【重置】；仅限获得“堆金积玉”称号的用户参与 。</p>
+					</div>
+					
+					<!--身份成长礼-->
+					<div class="grow-up grow-up1" style="display: none;">
+						<div class="btn-return">
+							<a class="spr" href="javascript:;" title="返回" ontouchend="PTTSendClick('btn','return','返回');"></a>
+						</div>
+						<div class="grow-up-title"></div>
+						<div class="grow-up-main">
+							<ul class="clearfix">
+								<li>		
+									<img src="ossweb-img/prop-img1.jpg" alt="银两*48888">
+									<b>银两*48888</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img2.jpg" alt="大回生仙饮(绑）*5">
+									<b>大回生仙饮(绑)*5</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img3.jpg" alt="心悦成长值+5">
+									<b>心悦成长值+5</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img3.jpg" alt="心悦成长值+5">
+									<b>心悦成长值+5</b>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-get">
+							<a class="spr" href="javascript:;" title="立即领取" ontouchend="PTTSendClick('btn','get now','立即领取');"></a>
+						</div>
+						<p>以自然周为周期，每星期一0点【重置】；仅限获得“朱门绣户”称号的用户参与 。</p>
+					</div>
+				
+					<div class="grow-up grow-up2" style="display: none;">
+						<div class="btn-return">
+							<a class="spr" href="javascript:;" title="返回" ontouchend="PTTSendClick('btn','return','返回');"></a>
+						</div>
+						<div class="grow-up-title"></div>
+						<div class="grow-up-main">
+							<ul class="clearfix">
+								<li>		
+									<img src="ossweb-img/prop-img1.jpg" alt="银两*48888">
+									<b>银两*48888</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img2.jpg" alt="大回生仙饮(绑）*5">
+									<b>大回生仙饮(绑)*5</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img3.jpg" alt="心悦成长值+5">
+									<b>心悦成长值+5</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img3.jpg" alt="心悦成长值+5">
+									<b>心悦成长值+5</b>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-get">
+							<a class="spr" href="javascript:;" title="立即领取" ontouchend="PTTSendClick('btn','get now','立即领取');"></a>
+						</div>
+						<p>以自然周为周期，每星期一0点【重置】；仅限获得“富贵逼人”称号的用户参与 。</p>
+					</div>
+				
+					<div class="grow-up grow-up3" style="display: block;">
+						<div class="btn-return">
+							<a class="spr" href="javascript:;" title="返回" ontouchend="PTTSendClick('btn','return','返回');"></a>
+						</div>
+						<div class="grow-up-title"></div>
+						<div class="grow-up-main">
+							<ul class="clearfix">
+								<li>		
+									<img src="ossweb-img/prop-img1.jpg" alt="银两*48888">
+									<b>银两*48888</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img2.jpg" alt="大回生仙饮(绑）*5">
+									<b>大回生仙饮(绑)*5</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img3.jpg" alt="心悦成长值+5">
+									<b>心悦成长值+5</b>
+								</li>
+								<li>					
+									<img src="ossweb-img/prop-img3.jpg" alt="心悦成长值+5">
+									<b>心悦成长值+5</b>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-get">
+							<a class="spr" href="javascript:;" title="立即领取" ontouchend="PTTSendClick('btn','get now','立即领取');"></a>
+						</div>
+						<p>以自然周为周期，每星期一0点【重置】；仅限获得“堆金积玉”称号的用户参与 。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer pr txc">腾讯公司保留在法律规定的范围内对上述规则进行解释的权利</div>
+		<!-- 旋屏提示 S -->
+	    <div class="mask flexcontainer" id="mask">
+	        <div class="mask-box">
+	            <div class="mask-pic"><i></i></div>
+	            <span>为了更好的体验，请将手机/平板横过来</span>
+	        </div>
+	    </div>
+	    <!-- 旋屏提示 E -->
+	</div>
+
+<script src="//ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+<script>
+	need("biz.scroll",function(s){
+	    s.init({
+	        conId:'rollbox',//内容容器ID
+	        leftId:'m_right',//左箭头ID
+	        rightId:'m_left',//右箭头ID
+	        frameWidth:654,//显示框宽度
+	        pageSpace:186,//翻页宽度或高度
+	        autoPlay:true,//自动播放
+	        position:'left',//播放方向 left为向左，up为向上,设置为up时必须加上翻页高度pageHeight值
+	        autoPlayTime:2,//自动播放间隔时间(秒)
+	        dotListId:'do'//是否需要分页
+	    });
+	})
+</script>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto-1.1.6.min.js"></script>
+<script>
+	// rem
+	var rem = new Fjjrem();
+	rem.Fjjwidth = 1136; //设计稿宽度
+	rem.type = 'width';
+	rem.Go();
+	
+	
+//	导航栏切换
+	var $nav1 = $('.nav1 a');
+	var $nav1_main = $('.nav1-main');
+	var $nav2 = $('.nav2 a');
+	var $nav2_main = $('.nav2-main');
+	
+	function navClick(id,id2,id3){
+    		id.on('click',function(){
+	    		var $index = id.index($(this));
+	    		id.removeClass('active').eq($index).addClass('active');
+	    		id2.hide().eq($index).show();
+	    		id3.hide();
+    		})
+    	}
+	
+	navClick($nav1,$nav1_main,$nav2_main);
+	navClick($nav2,$nav2_main,$nav1_main);
+	
+//	level等级进度条
+	var $level_line = $('.level-line');
+	var $level_i = $('.level-main i');
+	var $current_integral = parseInt($('.current-integral').text());
+	
+	console.log($current_integral)
+	console.log($level_line.width())
+	
+	var $cur = [0,1,1000,5000,10000,50000,100000,800000,1500000];
+	
+//	if( $current_integral > $cur[0] && $current_integral <= $cur[1]){ 
+//		console.log(1)
+//		$level_line.css('width':);
+//		$level_i.eq(0).addClass('on');
+//	}
+	
+	
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+	siteType:"a20170512xjqxxy", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+	pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+	pageName:"主页", //必填项:页面中文名
+	osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+	ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+	stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function') pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>
