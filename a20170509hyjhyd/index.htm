@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset='gbk'>
+<meta name="author" content="Tencent-CP">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" id="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="Description" content="腾讯首款RPG射击科幻网游《火源》开测，CG级游戏画面，众多副本，超强异星BOSS">
+<meta name="Keywords" content="腾讯,神秘新游, UP发布会,火源计划，异星降临 火源升起 ">
+<title>异星降临 火源升起-火源计划-官方网站-腾讯游戏</title>
+<!-- 设计：cp  |  重构：cp  |  创建：2017-05-09 -->
+<style type="text/css">
+html,body{ width: 100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,figure{margin:0;padding:0;border:0;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ol,ul{list-style:none}
+body{font-family:"Microsoft YaHei",Helvetica,STHeiTi,sans-serif;color:#333;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-select:text;-webkit-touch-callout:none;-webkit-tap-highlight-color: transparent;word-break:break-all;word-wrap:break-word;}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+h1{width: 100%; height: 0; font-size: 0; text-indent: -9999em; line-height: 500%; overflow: hidden;}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
+input,select,form,textarea{vertical-align:middle;outline:none}
+img{outline: none;}
+strong,b,em,i{ font-weight: normal; font-style: normal;}
+a{text-decoration:none;outline:0;color:#333}
+div,a,input,select,option{outline:none}
+table{border-collapse:collapse;border-spacing:0}
+body{ background-color: #000; }
+.db{display: block;}
+.dil{display: inline-block;}
+.bc{margin-left: auto;margin-right: auto}
+.pr{position: relative;}
+.pa{position: absolute;}
+.fl{float: left;}
+.txc{text-align: center;}
+.ovh{overflow: hidden;}
+.none{display: none;}
+.p-none{ pointer-events: none;}
+.ht{display: block;overflow: hidden;text-indent: -999em;}
+.clearfix:after,.clearfix:before{content: "";display: table;}
+.clearfix:after{clear: both;}
+
+.wrap{ width: 640px;}
+.footer{ line-height: 42px; color: #fff; text-align: center; background-color: #000; }
+.spr{ background: url(ossweb-img/sprites.png) no-repeat; }
+/*背景*/
+.bg{ position: relative; width: 100%; margin-top: -1px; background-repeat: no-repeat; background-position: center top; background-size: 100%; }
+.bg1{ height: 580px; background-image: url(ossweb-img/bg1.jpg); }
+.bg2{ height: 416px; background-image: url(ossweb-img/bg2.jpg); }
+.bg3{ height: 846px; background-image: url(ossweb-img/bg3.jpg); }
+.bg4{ height: 562px; background-image: url(ossweb-img/bg4.jpg); }
+
+/*内容*/
+/*bg1*/
+.logo{ display: block; width: 87px; height: 73px; margin: 0 auto; background: url(about:blank); }
+.btn1{ display: block; width: 225px; height: 54px; margin: 400px auto 0; color: #210800; font-size: 21px; font-weight: bold; line-height: 54px; text-align: center; background-position: 0 0; }
+
+/*bg2*/
+.login-box{ padding-top: 78px; margin-bottom: 28px; text-align: center; color: #fff; font-size: 18px; }
+.login-box a{ color: #ffcd6b; }
+#dologout{ margin-right: 38px; }
+.logined-text{ color: #ff5d00; }
+.btn-box{ position: relative; width: 100%; height: 92px; margin-bottom: 9px; }
+.btn2{ position: absolute; top: 12px; left: 90px; display: block; width: 202px; height: 75px; padding-left: 113px; color: #210800; font-size: 28px; line-height: 75px; font-weight: bold; background-position: -245px 0; }
+.btn-box .btn-ren{ position: absolute; top: -7px; left: 123px; width: 76px; height: 98px; background: url(ossweb-img/btn-ren.png) no-repeat; background-position: 100%; }
+.btn-box .btn-box-r{ position: absolute; top: 0; right: 0; width: 242px; height: 114px; }
+.btn-box .btn-box-r a{ margin-bottom: 10px; }
+.btn3{ display: block; width: 173px; height: 45px; color: #210800; font-size: 17px; line-height: 45px; font-weight: bold; text-align: center; background-position: 0 -87px; }
+.bg2 h4{ padding-left: 112px; margin-bottom: 16px; color: #fff; font-size: 24px; font-weight: bold; line-height: 28px; }
+.bg2 .bg2-text{ position: relative; padding-left: 112px; color: #ffd8b9; font-size: 18px; }
+.idot{display: block; float: left; width: 23px; height: 24px; margin-right: 4px; line-height: 24px; color: #000; font-size: 18px; text-align: center; background: url(ossweb-img/sprites.png) no-repeat -590px -26px; }
+.bg2 .bg2-text p{ display: block; margin-bottom: 18px; }
+
+/*bg3*/
+.pic-box{ height: 137px; padding: 58px 0 0 36px; margin-bottom: 66px; }
+.pic-box .pic-box-l{ float: left; width: 279px; height: 137px; margin-right: 11px; background: url(ossweb-img/bg-pic1.png) no-repeat; background-size: 100%; }
+.pic-box .pic-box-r{ float: left; width: 279px; height: 137px; background: url(ossweb-img/bg-pic2.png) no-repeat; background-size: 100%; }
+.pic-box a{ float: left; margin-top: 3px; }
+.btn-box1{ width: 293px; padding: 85px 0 0 10px; }
+.btn-box1 .btn5{ margin-right: 10px; }
+.pic-box-r .btn-box1{ padding-left: 14px; }
+.pic-box-r .btn-box1 .btn4{ margin-right: 10px; }
+.bg3 ul{ position: relative; width: 702px; height: 253px; padding-left: 12px; }
+.bg3 ul li{ float: left; width: 145px; margin: 0 89px 36px 0; background: url(ossweb-img/li-box.png) no-repeat center top; }
+.btn-li{ display: block; width: 145px; height: 153px; padding-top: 25px; margin-bottom: 25px;}
+.bg3 ul li i{ display: block; width: 54px; height: 58px; margin: 0 auto 11px; background: url(ossweb-img/sprites.png) no-repeat; }
+.bg3 ul li .icon1{ background-position: 0 -139px; }
+.bg3 ul li .icon2{ background-position: -66px -139px; }
+.bg3 ul li .icon3{ background-position: -132px -139px; }
+.bg3 ul li .icon4{ background-position: -198px -139px; }
+.bg3 ul li .icon5{ background-position: -266px -139px; }
+.bg3 ul li .icon6{ background-position: -334px -139px; }
+.bg3 ul li p{ margin-bottom: 66px; color: #fff5bc; font-size: 18px; text-align: center; }
+.btn4{ display: block; width: 149px; height: 39px; color: #210800; font-size: 17px; font-weight: bold; text-align: center; line-height: 39px; background-position: -185px -87px; }
+.btn5{ display: block; width: 92px; height: 32px; color: #210800; font-size: 19px; font-weight: bold; text-align: center; line-height: 32px; border: 2px solid #201516; background-color: #ffa101;  }
+/*bg4*/
+.bg4 h2{ color: #ffe9ac; padding-top: 49px; margin-bottom: 18px; font-size: 22px; font-weight: bold; line-height: 26px; text-align: center;}
+.bg4 .text-box{ padding-left: 38px; margin-bottom: 50px; }
+.bg4 p{ padding-left: 22px; margin-bottom: 14px; color: #ffd8b9; font-size: 18px; line-height: 22px; }
+.bg4 img{ display: block; margin: 0 auto 27px; }
+.bg4 .text-box-2{ margin-bottom: 25px; }
+.video-box{ position: relative; width: 429px; height: 174px; margin: 0 auto; }
+.video-box img{ margin: 0 auto;}
+.video-btn{ position: absolute; top: 36px; left: 173px; display: block; width: 79px; height: 91px; background: url(ossweb-img/btn-video.png) no-repeat; }
+
+/*视频弹窗*/
+.pop-video{ display: none; width: 280px; height: 200px; border: 5px solid #170501; background-color: #170501; }
+.pop-video .video{ position: absolute; left: 0; top: 0; z-index: 2; width: 280px; height: 200px; }
+.pop-video .video-loading{ position: absolute; width: 100%; top: 50%; margin-top: -9px; color: #fff; text-align: center; }
+.pop-video .close{ position: absolute; top: -5px; right: -45px; width: 40px; height: 40px; font-size: 30px; line-height: 40px; text-align: center; color: #aaa; background-color: #170501; }
+.pop-video .close:hover{ color: #fff; }
+
+/*分享朋友圈指引*/
+.tips-box{ position: absolute; top: 0; left: 0; display: none; width: 100%; height: 100%; z-index: 998; background: rgba(0,0,0,0.5);}
+.tips-share{ position: fixed; top: 40px; right: 0; width: 640px; height: 212px; background: url(ossweb-img/share-text.png) no-repeat; }
+</style>
+</head>
+<body>
+	<h1>异星降临 火源升起</h1>
+	<div class="wrap pr ovh" id="wrap">
+		<div class="bg bg1">
+			<a class="logo" href="//rf.qq.com/main.shtml" target="_blank" title="火源计划" ontouchend="PTTSendClick('link','hyjh','火源计划');");></a>
+			<a class="spr btn1" href="javascript:;" title="查看版本专题" ontouchend="PTTSendClick('btn','version','查看版本专题');");>查看版本专题</a>
+		</div>
+		<div class="bg bg2">
+			<div class="login-box">
+        		<!--登录前状态 Start-->
+				<div id="unlogin">亲爱的玩家，请 <a href="javascript:;" id="dologin">[登录]</a></div>
+				<!--登录前状态 End-->
+				<!--登录后状态 Start-->
+				<div id="logined" style="display:none">你好，<span id='login_qq_span'></span>，<a href="javascript:;" id="dologout">[注销]</a>
+				<b class="logined-text">我的火种 : <span>XXXX</span></b>
+				</div>
+				<!--登录后状态 End-->
+        	</div>
+        	<div class="btn-box">
+        			<a class="spr btn2" href="javascript:;" title="抽取内测资格" ontouchend="PTTSendClick('btn','extract','抽取内测资格');");>抽取内测资格</a>
+        			<div class="btn-ren"></div>
+        			<div class="btn-box-r">
+	        			<a class="spr btn3" href="javascript:;" title="填写问卷" ontouchend="PTTSendClick('btn','write','填写问卷');");>填写问卷</a>
+	        			<a class="spr btn3" href="javascript:;" title="查询资格" ontouchend="PTTSendClick('btn','select','查询资格');");>查询资格</a>
+        			</div>
+        	</div>
+        	<h4>抽取规则</h4>
+        	<div class="bg2-text clearfix">
+        		<span class="idot">1</span><p>每抽取一次，消耗100火种</p>
+        		<span class="idot">2</span><p>每Q每天抽取次数不限制</p>
+        		<span class="idot">3</span><p>如果火种余额不足，请完成任务进行火种收集</p>
+        	</div>
+		</div>
+		<div class="bg bg3">
+			<div class="pic-box clearfix">
+        		<div class="pic-box-l">
+        			<div class="btn-box1 clearfix">
+        				<a class="btn5" href="javascript:;" title="绑定手机" ontouchend="PTTSendClick('btn','binding','绑定手机');");>绑定手机</a>
+        				<a class="spr btn4" href="javascript:;" title="领取 100火种" ontouchend="PTTSendClick('btn','get','领取 100火种');");>领取 100火种</a>
+        			</div>   
+        		</div>
+        		<div class="pic-box-r">
+        			<div class="btn-box1 clearfix">
+	        			<a class="spr btn4" href="javascript:;" title="领取 150火种" ontouchend="PTTSendClick('btn','get','领取 150火种');");>领取 150火种</a>
+	        			<a class="btn5" href="javascript:;" title="关注空间号" ontouchend="PTTSendClick('btn','follow','关注空间号');");>关注空间号</a>
+        			</div>
+        		</div>
+        	</div>
+        	<ul class="clearfix">
+        			<li>
+        				<a class="btn-li" href="javascript:;" title="关注公众号绑定QQ号" ontouchend="PTTSendClick('btn','btn-li1','关注公众号绑定QQ号');");>
+	        				<i class="icon1"><div class="tips"></div></i>
+	        				<p>关注公众号<br />绑定QQ号</p>
+        				</a>
+        				<a class="spr btn4" href="javascript:;" title="领取 50火种" ontouchend="PTTSendClick('btn','get','领取 50火种');");>领取 50火种</a>
+        			</li>
+        			
+        			<li>
+        				<a class="btn-li" href="javascript:;" title="关注官方微博" ontouchend="PTTSendClick('btn','btn-li2','关注官方微博');");>
+	        				<i class="icon2"></i>
+	        				<p>关注<br />官方微博</p>
+        				</a>
+        				<a class="spr btn4" href="javascript:;" title="领取 20火种" ontouchend="PTTSendClick('btn','get','领取 20火种');");>领取 20火种</a>
+        			</li>
+        			<li>
+        				<a class="btn-li" href="javascript:;" title="关注兴趣部落" ontouchend="PTTSendClick('btn','btn-li3','关注兴趣部落');");>
+	        				<i class="icon3"></i>
+	        				<p>关注<br />兴趣部落</p>
+        				</a>
+        				<a class="spr btn4" href="javascript:;" title="领取 50火种" ontouchend="PTTSendClick('btn','get','领取 50火种');");>领取 50火种</a>
+        			</li>
+        			<li>
+        				<a class="btn-li" href="javascript:;" title="分享到QQ空间" ontouchend="PTTSendClick('btn','btn-li4','分享到QQ空间');");>
+	        				<i class="icon4"></i>
+	        				<p>分享到<br />QQ空间</p>
+        				</a>
+        				<a class="spr btn4" href="javascript:;" title="领取 50火种" ontouchend="PTTSendClick('btn','get','领取 50火种');");>领取 50火种</a>
+        			</li>
+        			<li>
+        				<a class="btn-li" href="javascript:share_direct();" title="分享到朋友圈" ontouchend="PTTSendClick('btn','btn-li5','分享到朋友圈');");>
+	        				<i class="icon5"></i>
+	        				<p>分享到<br />朋友圈</p>
+        				</a>
+        				<a class="spr btn4" href="javascript:;" title="领取 25火种" ontouchend="PTTSendClick('btn','get','领取 25火种');");>领取 25火种</a>
+        			</li>
+        			<li>
+        				<a class="btn-li" href="javascript:;" title="每日签到" ontouchend="PTTSendClick('btn','btn-li6','每日签到');");>
+	        				<i class="icon6"></i>
+	        				<p>每日<br />签到</p>
+        				</a>
+        				<a class="spr btn4" href="javascript:;" title="领取 50火种" ontouchend="PTTSendClick('btn','get','领取 50火种');");>领取 50火种</a>
+        			</li>
+        		</ul>
+		</div>
+		<div class="bg bg4">
+			<h2>太空灾难巨制《异星觉醒》电影宣传预告片</h2>
+			<div class="text-box">
+			    <span class="idot">1</span><p>观看预告片，可增加一次抽取内测资格机会，不消耗火种</p>
+			    <span class="idot">2</span>
+			       	<p>惊悚太空灾难巨制《异星觉醒》将于5月19日在内地公映。来自未知</p>
+			        <p>火星世界的高智商生物与人类展开生存之战，灭绝人类的惊世浩劫一</p>
+			       	<p>触即发。挟爆棚的国外口碑之势，《异星觉醒》将成为2017年最令</p>
+			        <p>人屏气凝神的惊悚太空灾难巨制，于5月19日再掀电影热潮。</p>
+		    </div>
+		    <div class="video-box">
+	        	<img src="ossweb-img/bg4-pic.jpg" width="429" height="174" alt="异界觉醒">
+	        	<a class="video-btn" href="javascript:popVideo('b01279q1c8n');" title="播放预告片" ontouchend="PTTSendClick('btn','play','播放预告片');");></a>
+        	</div>
+		</div>
+		<div class="footer pr txc">腾讯公司保留在法律规定的范围内对上述规则进行解释的权利</div>
+		<!--分享至朋友圈-->
+	    <div class="tips-box" id="tips_box">
+	    	<div class="tips-share">
+	    	</div>
+	    </div>
+	</div>
+	<!--视频弹窗-->
+    <div class="pop-video" id="pop-video">
+       	<div class="video" id="video"></div>
+        <p class="video-loading">稍等片刻，载入中...</p>
+        <a class="close" href="javascript:hideVideo();" title="关闭" ontouchend="PTTSendClick('btn','close','关闭');");>×</a>
+    </div>
+    
+<script>
+    var cwid = document.documentElement.clientWidth || document.body.clientWidth,
+        viewport = document.getElementById('viewport');
+    if(navigator.appVersion.indexOf('iPhone')!=-1 || navigator.appVersion.indexOf('iPad')!=-1){
+        viewport.setAttribute('content','width=640,minimum-scale=0.1,maximum-scale=5,user-scalable=no');   
+    } else if(navigator.appVersion.indexOf('Android') != -1){
+        document.getElementById('wrap').style.zoom = cwid/640;
+    } else{
+        viewport.setAttribute('content','width=640,minimum-scale=0.1,maximum-scale=5,user-scalable=no');
+    }
+</script>
+<script src="//ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto-1.1.6.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/login/loginmanagerv3.js" charset="gb2312"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+	siteType:"a20170509hyjhyd", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+	pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+	pageName:"主页", //必填项:页面中文名
+	osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+	ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+	stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function') pgvMain();//千万不能忘记！
+</script>
+	<script>
+		milo.addEvent(g("dologin"), "click", function() {
+			need("biz.login-min",function(LoginManager){
+			LoginManager.init({
+					needReloadPage:true
+				});
+				LoginManager.login();
+			});
+			return false;
+		});
+		milo.addEvent(g("dologout"), "click", function() {
+			need("biz.login-min",function(LoginManager){
+				LoginManager.logout();
+			});
+			return false;
+		});
+		milo.ready(function() {
+			need("biz.login-min",function(LoginManager){
+				LoginManager.checkLogin(function(){
+					g("login_qq_span").innerHTML = LoginManager.getUserUin();//获取QQ号
+				});
+			});
+		});
+	</script>
+	<!-- 点击弹出视频浮层 -->
+	<script src="//imgcache.qq.com/tencentvideo_v1/tvp/js/tvp.player_v2_zepto.js" charset="utf-8"></script>
+	<script language="javascript">
+	    //开始 视频播放（点击播放） 需要用到浮层，这里可以用milo的dialog组建
+	    function openDialog(e){
+	        need("biz.dialog",function(Dialog){
+	            Dialog.show({
+	                id:e,
+	                bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+	                opacity:70      //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+	            });
+	        });
+	    }
+	    function closeDialog(){
+	        need("biz.dialog",function(Dialog){
+	            Dialog.hide();
+	        });
+	    }
+	    function playVideo(vid){
+	        var video = new tvp.VideoInfo();
+	        video.setVid(vid);//测试用视频vid，实际找产品提供
+	        var player = new tvp.Player();
+	        player.create({
+	            width:280,
+	            height:200,//视频高宽
+	            video:video,
+	            isVodFlashShowSearchBar:0,//播放器是否出现搜索框
+	            modId:"video", //视频插入domId
+	            autoplay:true,//是否自动播放，如果需要自动播放，设置为true
+	            flashWmode:"opaque",//这个属性必须加上
+	            vodFlashSkin:"http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf"//精简皮肤
+	        });
+	    }
+	    function popVideo(vid){
+	        openDialog('pop-video')
+	        playVideo(vid);
+	    }
+	    function hideVideo(){
+	        var flv_s = document.getElementById("video");
+	        if (flv_s){flv_s.innerHTML= "";}
+	        closeDialog();
+	    }
+	</script>
+	<script>
+		var $tips_box = document.getElementById("tips_box");
+		function share_direct(){
+			$tips_box.style.display = "block";
+		}
+		
+		$tips_box.ontouchend=function(){
+			$tips_box.style.display = "none";
+		}
+	</script>
+</body>
+</html>
